@@ -30,38 +30,113 @@ ul.links {
 /*start navbar*/
 
 .navbar{
-	background-color: #EEE;
+	background-color: white;
+	font-size: 22px;
+	color: white;
+	/*i need to make the header hidden or remove it i choose one of lot of tricks to do that*/
+	height: 0;
 	/*to raplace the problem of overflow i use my framwork*/
 	/*overflow: hidden;*/ 
+	position: relative;
+	z-index: 6;
 }
 
 .navbar .brand {
 	float: left;
 	width : 40%;
-	margin-top: 5px;
+	//margin-top: 5px;
+	font-weight: bold;
+}
+
+.navbar .brand #brandColor{
+	color: #85ffcf;
 }
 
 .navbar .links {
 	float: left;
 	width: 60%;
-	margin-top: 15px;
+	margin-top: 20px;
 	font-family: 'Merriweather', serif;
+	font-weight: bold;
+	padding-left: 220px;
 }
 
 .navbar .links li {
 	display: inline-block;
 	padding: 10px 0px;
 	margin: 0 10px;
-	border-bottom :2px solid #355b4c transparent;
+	border-bottom :2px solid #85ffcf transparent;
 	/*to change text style uppercase or lowercase*/
 	/*text-transform: uppercase;*/
 }
 /*N.B. there is a differece between li.active and li .active*/
 .navbar .links li.active,
 .navbar .links li:hover {
-	color: #355b4c;
-	border-bottom :2px solid #355b4c;
+	color: #85ffcf;
+	border-bottom :2px solid #85ffcf;
 }
+
+/*end navbar*/
+
+/*start header*/
+
+.header{
+	background-image : linear-gradient(rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5)), url('../images/background2.jpg');
+	background-repeat : no-repeat;
+	position: relative;
+
+}
+
+.header .overlay{
+	background-color: rgba(0,0,0,0.2);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+/*slider */
+.header .bxslider p{
+	color: white;
+	font-size: 40px
+}
+.header .bxslider h2{
+	color: white;
+	font-size: 80px;
+	color :#85ffcf;
+}
+
+.header .bxslider{
+	height: 100%;
+	width: 100%;
+}
+
+.header .bxslider li{
+	display: block;
+	height: 150px;
+}
+
+.header .bx-wrapper{
+	box-shadow: none;
+	border: 0;
+	background : none;
+	height: 100%;
+	margin-bottom: 0;
+}
+.header .bx-wrapper .bx-viewport{
+	height: 100% !important;
+	text-align: center;
+}
+
+
+
+
+/*end header*/
 
 /*start my framwork*/
 
@@ -70,5 +145,3 @@ ul.links {
 }
 
 /*end my framwork*/
-
-/*end navbar*/

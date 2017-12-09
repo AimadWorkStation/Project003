@@ -6,6 +6,10 @@
 	<title>Project003</title>
 	<!-- script for LiveReload app to reloard web page direct by saving here -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	
+	<!-- bxslider css file -->
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<!-- my css files -->
 	<!-- reset html page -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- my css codes -->
@@ -17,7 +21,7 @@
 	<div class="navbar">
 		<div class="container">
 			<div class="brand">
-				<h2>NextG</h2>
+				<h2>NextG <span id="brandColor">WorkShare<span></h2>
 			</div>
 			<ul class="links">
 				<li class="active">Home</li>
@@ -33,8 +37,40 @@
 
 	<!-- end navigation bar -->
 
+	<!-- start header -->
+
+	<div class="header myheader">
+		<div class="overlay">
+			<ul class="bxslider">
+			  <li>
+			  	<h2>Welcom to 1</h2>
+			  	<p>Lorem ipsum dolor sit amet, consectetur </p>
+			  </li>
+			  <li>
+			  	<h2>Welcom to 2</h2>
+			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum itaque possimus sint, </p>
+			  </li>
+			  <li>
+			  	<h2>Welcom to 3</h2>
+			  	<p>Lorem ipsum dolor sit amet, consectetur .</p>
+			  </li>
+			  <li>
+			  	<h2>Welcom to 4</h2>
+			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quisquam harum illum . Quo?</p>
+			  </li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- end header -->
+
 	
 	<!-- jquery labrery file -->
+
 	<script src="js/jquery-3.2.1.min.js"></script>
+	
+	<script src='js/jquery.bxslider.js'></script>
+
+	<script src='js/plugins.js'></script>
 </body>
 </html>
