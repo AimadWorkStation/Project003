@@ -17,6 +17,7 @@ body{
 .container {
 	width: 1200px;
 	margin: auto;
+	height: 800px;
 }
 
 ul.links {
@@ -74,6 +75,18 @@ ul.links {
 .navbar .links li:hover {
 	color: #85ffcf;
 	border-bottom :2px solid #85ffcf;
+}
+
+.navbar .links li a {
+	color: white;
+	/*to elminate the line under*/
+	text-decoration: none;
+
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {
+	color: #85ffcf;
 }
 
 /*end navbar*/
@@ -137,6 +150,15 @@ ul.links {
 
 
 /*end header*/
+
+/*start services*/
+	
+.pad{
+	height :2000px;
+	padding: 20px
+}
+
+/*end services*/
 
 /*start my framwork*/
 
