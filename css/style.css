@@ -264,6 +264,159 @@ ul.links {
 
 /*end services*/
 
+/*start About*/
+.about{
+	background : url('../images/about.jpg');
+	-webkit-background-size :cover;
+	-moz-background-size :cover;
+	-o-background-size :cover;
+	background-size :cover;
+	height: 400px;
+	position: relative;
+	text-align: center;
+	padding: 80px 0px;
+}
+
+
+.about .abourOverlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 100%
+	height : 100%;
+	color: #FFF;
+	background-color: rgba(112, 212, 249, 0.7);
+}
+
+.about h2{
+	font-size: 36px;
+	margin: 40px 0;
+}
+
+.about q {
+	font-size: 24px;
+	color: #f3f3f3f5;
+	display: block;
+	margin-top : 86px;
+}
+
+.about p {
+	font-size: 30px;
+	color: rgba(1,103,63,1);
+}
+
+.about .slider > div:not(:first-of-type){
+	display: none;
+}
+
+
+/*.about .slider .active{
+	display: block;
+}*/
+
+
+
+/*end About*/
+
+
+
+/*start project*/
+
+.projects{
+	padding: 80px 0;
+}	
+.projects h2{
+	font-weight: normal;
+}
+
+.projects ul{
+	margin-top: 50px;
+}
+
+.projects ul li {
+	display: inline-block;
+	border : 2px solid #b3ccca;
+	padding: 10px;
+	color: #b3ccca;
+	border-radius: 7px;
+	margin-right: 5px;
+}
+
+
+.projects ul li.active{
+	border-color: #1cbf7f;
+	background-color: #1cbf7f;
+	color: white
+}
+
+.projects .gallery{
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.projects .gallery .row > div:nth-child(2){
+	margin-left : 1%;
+	margin-right: 1%;	
+}
+
+.projects .gallery .row > div{
+	width: 32.6666%;
+	float: left;
+	margin-bottom: 12px;
+	position: relative;
+}
+
+.projects .gallery .row > div .overlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 98%;
+	/*start text up images*/
+	line-height: 227px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	/*end text up images*/
+	background-color: rgba(46, 224, 154, 0.6);
+	display: none;
+}
+
+.projects .gallery .row > div .heart{
+	position: absolute;
+	right: 16px;
+	bottom: 20px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	display: none;
+}
+
+.projects .gallery .row > div:hover .overlay{
+	display: block;
+}
+.projects .gallery .row > div:hover .heart{
+	display: block;
+}
+
+.projects .gallery .row > div img{
+	width: 100%;
+
+}
+
+
+
+
+
+/*end project*/
+
+
+
 /*start my framwork*/
 /*after avery float i add an empty div with clearfix class*/
 .clearfix {
