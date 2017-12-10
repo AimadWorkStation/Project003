@@ -9,8 +9,9 @@ $(document).ready(function() {
 	
 
 	//fuction for the click menu element and change active classe among theme
-	$('.links li').click(function(){
-	$(this).addClass('active')
+	//parent() to add active class for the li not a tag
+	$('.links li a').click(function(){
+	$(this).parent().addClass('active')
 			.siblings().removeClass('active');
 		});
 
