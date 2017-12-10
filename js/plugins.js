@@ -60,6 +60,22 @@ $(document).ready(function() {
 	});	
 
 
+	//fadeOut the overlay of images in Our Team contaier
+
+	$('.ourTeam .box:not(:last-of-type)').mouseenter(function(){
+		//var a = $(this).find(".overlay").data('value');
+			// $(this).find(".overlay").css('display','block');
+			// $(this).siblings().find(".overlay").css('display','none');
+		$(this).find(".overlay").fadeIn(800);
+		$(this).siblings().find(".overlay").fadeOut(400);
+
+	});	
+	$('.ourTeam .box:not(:last-of-type)').mouseout(function(){
+		$(this).find(".overlay").delay(1000).fadeOut(400);
+	});
+	// $('.ourTeam .box:not(:last-of-type)').on('mouseenter',function(){
+	// 	$('.ourTeam .box:not(:last-of-type) .overlay').fadeOut(1000);
+	// });
 
 
 

@@ -179,7 +179,15 @@ ul.links {
 	width: 20%;
 	margin-right: 5%;
 	margin-top: 12px;
+	transition-property: transform;
+	transition-duration: 1s;
+
 }
+
+.services .item i:hover{
+	transform : rotateY(180deg);
+}
+
 
 .services .item .info{
 	float: left;
@@ -204,16 +212,16 @@ ul.links {
 
 .ourTeam .box{
 	float: left;
-	
+	width: 175px;
+	height: 175px;
 } 
 
 .ourTeam .textBox{
 	width: 33%;
-	padding-left : 2%;
 }
 
-.ourTeam .box:not(last-child){
-	padding: 0 2% 0 0
+.ourTeam .box:not(:last-of-type){
+	margin: 0 2% 0 0;
 }
 
 .ourTeam .box p{
@@ -225,12 +233,12 @@ ul.links {
 	font-weight:normal;
 } 
 
-/*.ourTeam .box:not(last-child){
+.ourTeam .box:not(:last-of-type){
 	position: relative;
 }
 
 
-.ourTeam .box:not(last-child) .overlay {
+.ourTeam .box:not(:last-of-type) .overlay {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -238,11 +246,20 @@ ul.links {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	background-color: red;
-}*/
-
-
-
+	/*start text up images*/
+	line-height: 175px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	/*end text up images*/
+	background-color: rgba(28, 191, 127, 0.5)/*#1cbf7f*/;
+	/*i didn't use the opacity cause it affect all the overlay display even the text so i will use backgroud color rgba
+	att google tape hex to rgba it will turn #1cbf7f to rgba(28, 191, 127, 1)*/
+	/*opacity: 0.5;*/
+	display: none;
+	
+}
 
 
 /*end services*/
@@ -272,6 +289,6 @@ ul.links {
 .line{
 	border : 1px solid #76ccc4;
 	display: block;
-	margin : 0 0 60px 0;
+	margin : 0 0 80px 0;
 }
 /*end my framwork*/
