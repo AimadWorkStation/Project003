@@ -85,11 +85,9 @@ $(document).ready(function() {
  				$(this).delay(3000).fadeOut(1000,function(){
  					$(this).removeClass('active').next().addClass('active').fadeIn();
  					autoSlider();
-
  				});
  				
 			}
-
 			else{
 				$(this).delay(3000).fadeOut(1000,function(){
  					$(this).removeClass('active');
@@ -98,10 +96,16 @@ $(document).ready(function() {
  				});
 			}
 		});
+	});
 
+	//trigger mixItUp 
+	//i use the mixItUp shuflle cause it's very simple to use and the steps are very easy 
+	mixitup('#container');
 
-	})
+	//change classe selected between the links affter shuffling
+	$(".shuffle li").on('click',function(){
+		$(this).addClass('active').siblings().removeClass('active');
+	});
 
-	//autoSlider();
 
 });

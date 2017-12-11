@@ -1,4 +1,4 @@
-/*start global*/
+start global*/
 
 /*to fix the add of size of divs
 to add automaticly web kit for all property
@@ -44,8 +44,8 @@ ul.links {
 
 .navbar .brand {
 	float: left;
-	width : 40%;
-	//margin-top: 5px;
+	width : 50%;
+	margin-top: 5px;
 	font-weight: bold;
 }
 
@@ -55,11 +55,11 @@ ul.links {
 
 .navbar .links {
 	float: left;
-	width: 60%;
+	width: 50%;
 	margin-top: 20px;
 	font-family: 'Merriweather', serif;
 	font-weight: bold;
-	padding-left: 220px;
+
 }
 
 .navbar .links li {
@@ -409,13 +409,99 @@ ul.links {
 
 }
 
-
+/*to make cursore of the li as a pointer clickable not a sign of cursor writer*/
+.projects .shuffle li {
+	cursor: pointer;
+}
 
 
 
 /*end project*/
 
+/*start footer*/
 
+.footer{
+	background-color: #232323;
+	color: #c3c3c3;
+	padding: 40px 0;
+	overflow: hidden;
+}
+
+.footer .column{
+	width: 25%;
+	float: left;
+}
+
+.footer .column h2{
+	color: white;
+	font-weight: normal;
+	font-size: 18px;
+	font-family: arial;
+	padding-bottom: 30px;
+}
+
+.footer .column p{
+	line-height: 24px;
+	margin-bottom: 40px;
+	font-family: arial;
+}
+
+.footer .column:first-child i{
+	display: inline-block;
+	color: #c3c3c3;
+	font-size: 24px;
+	font-weight: normal;
+	border: 1px solid #c3c3c3;
+	padding: 5px; 
+	margin-right: 5px; 
+}
+
+
+.footer .tags span{
+	display: inline-block;
+	color: #c3c3c3;
+	font-size: 15px;
+	font-weight: normal;
+	border: 1px solid #c3c3c3;
+	padding: 5px; 
+	margin-right: 5px; 
+	margin-bottom: 5px; 
+}
+
+.footer .recent div{
+	overflow: hidden;
+	margin: 14px;
+}
+
+.footer .recent img{
+	float: left;
+    margin-right: 21px;
+
+}
+.footer .recent div h4{
+	margin: 9px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.footer .blog ul{
+    padding-left: 0px;
+}
+
+
+.footer .blog ul li{
+	list-style: none;
+    border-bottom: 1px solid;
+    padding-bottom: 14px;
+    margin-bottom: 17px;
+}
+
+
+
+.footer .copyright{
+	margin-top: 30px;
+}
+/*end footer*/
 
 /*start my framwork*/
 /*after avery float i add an empty div with clearfix class*/
@@ -444,4 +530,4 @@ ul.links {
 	display: block;
 	margin : 0 0 80px 0;
 }
-/*end my framwork*/
+/*end my framwork

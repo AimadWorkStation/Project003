@@ -216,31 +216,31 @@
 	<div id="proj" class="projects">
 		<div class="container">
 			<h2 class="smallyLine">Projects</h2>
-			<ul>
-				<li class="active">All</li>
-				<li>Templates</li>
-				<li>Analyse Project</li>
-				<li>Business Plan</li>
-				<li>Mobile Apps</li>
-				<li>E-Marketing</li>
+			<ul class="shuffle">
+				<li class="filter active" data-filter="all">All</li>
+				<li class="filter" data-filter=".Templates">Templates</li>
+				<li class="filter" data-filter=".Analyse">Analyse Project</li>
+				<li class="filter" data-filter=".Business">Business Plan</li>
+				<li class="filter" data-filter=".Mobile">Mobile Apps</li>
+				<li class="filter" data-filter=".Marketing">E-Marketing</li>
 			</ul>
-			<div class="gallery">
+			<div id="container" class="gallery">
 				<div class="row">
-					<div class="">
+					<div class="mix Templates">
 						<div class="overlay">View More</div>
 						<span class="heart">
 							<i class="fa fa-heart-o"></i> 20
 						</span>
 						<img src="https://place-hold.it/370x215/1cbf7f/#DDD.png&text=Templates" alt="">
 					</div>
-					<div class="">
+					<div class="mix Business">
 						<div class="overlay"></div>
 						<span class="heart">
 							<i class="fa fa-heart-o"></i> 20
 						</span>
 						<img src="https://place-hold.it/370x215/1cbf7f/#DDD.png&text=Analyse" alt="">
 					</div>
-					<div class="">
+					<div class="mix Marketing">
 						<div class="overlay"></div>
 						<span class="heart">
 							<i class="fa fa-heart-o"></i> 20
@@ -250,21 +250,21 @@
 				</div>
 
 				<div class="row">
-					<div class="">
+					<div class="mix Mobile">
 						<div class="overlay"></div>
 						<span class="heart">
 							<i class="fa fa-heart-o"></i> 20
 						</span>
 						<img src="https://place-hold.it/370x215/1cbf7f/#DDD.png&text=Templates" alt="">
 					</div>
-					<div class="">
+					<div class="mix Business">
 						<div class="overlay"></div>
 						<span class="heart">
 							<i class="fa fa-heart-o"></i> 20
 						</span>
 						<img src="https://place-hold.it/370x215/1cbf7f/#DDD.png&text=Analyse" alt="">
 					</div>
-					<div class="">
+					<div class="mix Templates">
 						<div class="overlay"></div>
 						<span class="heart">
 							<i class="fa fa-heart-o"></i> 20
@@ -280,13 +280,69 @@
 
 	<!-- end project -->
 
+	<!-- start footer -->
 
+	<div class="footer">
+		<div class="container">
+			<div class="column">
+				<h2>About Classic</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quisquam necessitatibus, perferendis et, praesentium assumenda doloribus obcaecati rerum quia facere eum labore nisi eligendi sunt. Facilis maiores praesentium asperiores, hic!</p>
+				<i class="fa fa-youtube "></i>
+				<i class="fa fa-github "></i>
+				<i class="fa fa-twitter "></i>
+			</div>
+			<div class="column tags">
+				<h2>Tags</h2>
+				<span>Web Developpement</span>
+				<span>Projects</span>
+				<span>Business</span>
+				<span>E-marketig</span>
+				<span>Mobile Apps</span>
+				<span>designe</span>
+			</div>
+			<div class="column recent">
+				<h2>Recet Posts</h2>
+				<div>
+					<img src="https://place-hold.it/80x60/1cbf7f/#DDD" alt="">
+					<h4>Start You Busines</h4>
+					<span>date : 2017/12/11</span>
+				</div>
+				<div>
+					<img src="https://place-hold.it/80x60/1cbf7f/#DDD" alt="">
+					<h4>Share Your Idea</h4>
+					<span>date : 2017/12/11</span>
+				</div>
+				<div>
+					<img src="https://place-hold.it/80x60/1cbf7f/#DDD" alt="">
+					<h4>Run through Dreams</h4>
+					<span>date : 2017/12/11</span>
+				</div>
+
+			</div>
+			<div class="column blog">
+				<h2>Blog Category</h2>
+				<ul>
+					<li>Agency</li>
+					<li>Business</li>
+					<li>Multi Porpes</li>
+					<li>Audio</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+			<div class="copyright">NextG WorkShare Copyright &copy; 2017</div>
+		</div>
+	</div>
+
+
+	<!-- end footer -->
 	
 	<!-- jquery labrery file -->
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	
 	<script src='js/jquery.bxslider.js'></script>
+
+	<script src="js/mixitup.min.js"></script>
 
 	<script src='js/plugins.js'></script>
 </body>
