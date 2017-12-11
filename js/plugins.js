@@ -107,5 +107,11 @@ $(document).ready(function() {
 		$(this).addClass('active').siblings().removeClass('active');
 	});
 
-
+	//niceScroll trigger, this is a pluging very simple to use to change the bar scroller and it effects
+	$("body").niceScroll({
+		//there is so much properties to use to change the scroll designe or/and effect
+		cursorcolor : "#1abc9c",
+		cursorborder : "1px solid #1abc9c",
+		emulatetouch: true
+	});
 });
