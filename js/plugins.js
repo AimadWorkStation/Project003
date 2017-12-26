@@ -112,6 +112,5 @@ $(document).ready(function() {
 		//there is so much properties to use to change the scroll designe or/and effect
 		cursorcolor : "#1abc9c",
 		cursorborder : "1px solid #1abc9c",
-		emulatetouch: true
 	});
 });
